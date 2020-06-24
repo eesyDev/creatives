@@ -1,0 +1,25 @@
+.five {
+    height: 325px;
+    background-color: $main_color;
+    padding: 113px 0 126px;
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_item {
+        display: flex;
+        justify-content: space-between;
+        width: 552px;
+    }
+    &_icon {
+        width: 69px;
+        height: 69px;
+    }
+    &_text {
+        width: 454px;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}

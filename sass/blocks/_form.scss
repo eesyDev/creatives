@@ -1,0 +1,62 @@
+.form {
+    height: 872px;
+    background: url(../img/bg_8th.png) center center/cover no-repeat;
+    padding: 224px 0 101px;
+    position: relative;
+    &_title {
+        @include title;
+        color: #ffffff;
+    }
+    &_letter {
+        @include letter;
+        color: rgba(256,256,256, .2);
+        position: absolute;
+        top: 134px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    form {
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        input:nth-child(1), input:nth-child(2), input:nth-child(3) {
+            width: 370px;
+            height: 48px;
+            border: 1px solid white;
+            background: rgba(256,256,256,.0);
+            padding: 15px 22px;
+            color: white;
+            margin-bottom: 39px;
+            outline: none;
+            &::placeholder{
+                color: white;
+            }
+        }
+        input:nth-child(4) {
+            width: 100%;
+            height: 151px;
+            border: 1px solid white;
+            background: rgba(256,256,256,.0);
+            padding: 15px 22px;
+            color: white;
+            outline: none;
+            &::placeholder{
+                color: white;
+            }
+        }
+        button {
+            width: 227px;
+            height: 64px;
+            background-color: $main_color;
+            border: none;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin: 65px auto 0;
+            outline: none;
+        }
+    }
+}

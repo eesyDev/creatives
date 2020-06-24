@@ -1,0 +1,28 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/icons';
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham', sans-serif;
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+$main_color:#11749e;
+@import 'mixins';
+@import 'blocks/promo';
+@import 'blocks/features';
+@import 'blocks/third';
+@import 'blocks/blog';
+@import 'blocks/five';
+@import 'blocks/six';
+@import 'blocks/team';
+@import 'blocks/form';
+@import 'blocks/footer';

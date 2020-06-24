@@ -1,0 +1,52 @@
+.blog {
+    position: relative;
+    height: 1017px;
+    padding: 164px 0 109px;
+    &_letter {
+        position: absolute;
+        top: 76px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include letter;
+        color: #d7d7d7;
+        z-index: -1;
+    }
+    &_title {
+        @include title;
+        color: #222222;
+    }
+    &_subtitle {
+        margin-top: 115px;
+        font-size: 30px;
+        line-height: 1;
+        font-weight: 400;
+        text-align: center;
+    }
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 76px;
+    }
+    &_item {
+        width: 270px;
+        text-align: center;
+    }
+    &_img {
+        width: 100%;
+        height: 280px;
+    }
+    &_name {
+        margin-top: 44px;
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $main_color;
+    }
+    &_text {
+        margin-top: 26px;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+}
