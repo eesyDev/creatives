@@ -2,7 +2,10 @@
     height: 1082px;
     background: url(../img/mainbg.png) center center/cover no-repeat;
     padding: 0 0 311px;
-    header {
+    .hamburger {
+        display: none;
+    }
+    &_main {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -149,5 +152,158 @@
     }
     100% {
         transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 1199px) {
+    .promo {
+        &_logo {
+            margin-right: 25px;
+        }
+        &_main {
+            width: 885px;
+        }
+        nav {
+            width: 550px;
+        }
+        &_title {
+            font-size: 120px;
+        }
+        &_subtitle {
+            font-size: 23px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .promo {
+        height: 865px;
+        &_title {
+            font-size: 96px;
+            margin-top: 205px;
+        }
+        &_subtitle {
+            font-size: 17px;
+        }
+        &_main {
+            display: none;
+        }
+        .hamburger {
+            display: none;
+            // position: fixed;
+            // top: 30px;
+            // right: 25px;
+            // transform: translateY(-50%);
+            // width: 26px;
+            // height: 14px;
+            &_button {
+                display: none;
+                position: fixed;
+                top: 15px;
+                right: 20px;
+                z-index: 10;
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+                background-color: #2a2a2a;
+                span, span:after, span:before {
+                    position: absolute;
+                    width: 35px;
+                    height: 5px;
+                    background-color: #fff;
+                }
+                span {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                span:before {
+                    content: '';
+                    top: -12px;
+                }
+                span:after {
+                    content: '';
+                    top: 12px;
+                }
+            }
+            &_nav {
+                padding-top: 65px;
+                position: fixed;
+                z-index: 11;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                background-color: #2a2a2a;
+                overflow-y: auto;
+                right: -100%;
+                a {
+                    padding: 30px;
+                    font-size: 32px;
+                    text-decoration: none;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+        }
+        .hamburger_active .hamburger_button{
+            span {
+                background-color: transparent;
+            }
+            span:before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+            span:after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+            .hamburger_nav {
+                right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .promo {
+        &_title {
+            font-size: 70px;
+        }
+        &_subtitle {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+@media (max-width: 572px) {
+    .promo {
+        height: 815px;
+        &_title {
+            font-size: 52px;
+        }
+        &_subtitle {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 424px) {
+    .promo {
+        &_title {
+            font-size: 46px;
+        }
+    }
+}
+@media (max-width: 374px) {
+    .promo {
+        height: 680px;
+        &_title {
+            font-size: 38px;
+            margin-top: 165px;
+        }
+        &_subtitle {
+            padding: 0 10px;
+        }
+        &_scroll {
+            margin-top: 65px;
+        }
     }
 }
