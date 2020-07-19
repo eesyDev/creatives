@@ -60,3 +60,59 @@
         }
     }
 }
+@media (max-width: 1199px) {
+    .form {
+        padding: 189px 0 64px;
+        &_letter {
+            top: 102px;
+        }
+        form {
+            input:nth-child(1), input:nth-child(2), input:nth-child(3) {
+                width: 264px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .form {
+        form {
+            input:nth-child(1), input:nth-child(2), input:nth-child(3) {
+                width: 208px;
+            }
+            input:nth-child(4) {
+                height: 114px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .form {
+        form {
+            input:nth-child(1), input:nth-child(2), input:nth-child(3) {
+                width: 158px;
+            }
+        }
+    }
+}
+@media(max-width: 572px) {
+    .form {
+        padding: 35px 28px 35px;
+        &_letter {
+            font-size: 195px;
+        }
+        form {
+            input:nth-child(1), input:nth-child(2), input:nth-child(3) {
+                width: 350px;
+                height: 44px;
+            }
+            input:nth-child(4) {
+                width: 350px;
+                height: 120px;
+            }
+            button {
+                width: 183px;
+                height: 55px;
+            }
+        }
+    }
+}
