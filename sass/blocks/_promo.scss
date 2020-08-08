@@ -1,7 +1,7 @@
 .promo {
     height: 1082px;
-    background: url(../img/mainbg.png) center center/cover no-repeat;
-    padding: 0 0 311px;
+    background: url(../img/mainbg.jpg) center center/cover no-repeat;
+    padding: 0 0 185px;
     .menu {
         display: none;
     }
@@ -13,6 +13,10 @@
         height: 115px;
         margin: 0 auto;
     }
+    &_under {
+        height: 100%;
+        background-color: rgba(#000, .7);
+    }
     &_logo {
         position: relative;
         width: 67px;
@@ -23,7 +27,7 @@
             position: absolute;
             transition: 0.5s;
             height: 67px;
-            background: $main_color;
+            background: #2471A3;
             color: white;
             font-size: 28px;
             padding: 14px;
@@ -100,7 +104,7 @@
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.74em;
-        color: $main_color;
+        color: #fff;
         margin-top: 36px;
         text-align: center;
     }
